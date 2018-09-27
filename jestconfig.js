@@ -5,6 +5,7 @@ module.exports = {
   ],
   setupFiles: [
     'raf/polyfill',
+    'babel-polyfill',
     './jestsetup.js',
   ],
   testMatch: [

@@ -279,3 +279,37 @@ exports[`Select should render an invalid tag variant 1`] = `
   variant="tag"
 />
 `;
+
+exports[`Select should render with a defautValue 1`] = `
+<Frame
+  disabled={false}
+  display={
+    Array [
+      <Tag
+        onDeselect={[Function]}
+        value="one"
+      >
+        one
+      </Tag>,
+      <Tag
+        onDeselect={[Function]}
+        value="two"
+      >
+        two
+      </Tag>,
+    ]
+  }
+  dropdown={[Function]}
+  isInvalid={false}
+  onDeselect={[Function]}
+  onSelect={[Function]}
+  placeholder="- Select -"
+  value={
+    Array [
+      "one",
+      "two",
+    ]
+  }
+  variant="multiple"
+/>
+`;

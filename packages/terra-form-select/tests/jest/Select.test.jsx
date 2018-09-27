@@ -102,4 +102,9 @@ describe('Select', () => {
     const wrapper = shallow(<Select variant="tag" isInvalid />, intlContexts.shallowContext);
     expect(wrapper).toMatchSnapshot();
   });
+
+  it('should render with a defautValue', () => {
+    const wrapper = shallow(<Select variant="multiple" defaultValue={['one', 'two']} />, intlContexts.shallowContext);
+    expect(wrapper).toMatchSnapshot();
+  });
 });
